@@ -1,9 +1,7 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
     ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
     ~/bin:
