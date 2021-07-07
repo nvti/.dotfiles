@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$HOME/bin:/usr/local/go/bin:$HOME/Tools/node/bin:$PATH
+export PATH=$HOME/go/bin:$HOME/bin:/usr/local/go/bin:$HOME/Tools/node/bin:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -132,4 +132,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
 
