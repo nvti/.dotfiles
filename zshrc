@@ -69,6 +69,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions)
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=6"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,16 +101,17 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/go/bin:$HOME/bin:/usr/local/go/bin:$HOME/Tools/node/bin:/usr/local/cuda-10.2/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/t/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/t/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/t/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/t/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/t/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/t/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/t/anaconda3/bin:$PATH"
+        export PATH="/home/t/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
